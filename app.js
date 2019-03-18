@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var etlapRouter = require('./routes/etlap');
+var router = require('./routes/api');
 
 var app = express();
 
@@ -16,9 +16,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'weblap')));
+app.use(express.static(path.join(__dirname, 'web')));
 
-app.use('/etlap', etlapRouter);
+app.use('/api', router);
 
 
 // catch 404 and forward to error handler

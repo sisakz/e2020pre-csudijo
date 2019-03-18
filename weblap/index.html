@@ -34,6 +34,9 @@
 							<a class="nav-link" href="#">Legnépszerűbb</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#">Asztalfoglalás</a>
+							</li>						
+						<li class="nav-item">
 							<a class="nav-link" href="#">Belépés</a>
 						</li>
 
@@ -129,6 +132,32 @@
 							
 						</p>
 					</p>
+				</div>
+		</section>
+		<section class="asztalfoglalas">
+				<div class="container">
+						<h2 class="font-weight-light">Asztalfoglalás</h2>
+						<form action="/foglalas">
+							<div class="form-group">
+							  <label for="nev">Név:</label>
+							  <input type="text" class="form-control" id="nev">
+							</div>
+							<div class="form-group">
+							  <label for="telefon">Telefon:</label>
+							  <input type="text" class="form-control" id="telefon">
+							</div>
+							<div class="form-group">
+								<label for="idopont">Időpont:</label>
+								<input type="text" class="form-control" id="idopont">
+							</div>
+							<div class="form-group">
+								<label for="vendegszam">Vendégek száma:</label>
+								<input type="number" class="form-control" id="vendegszam">
+							</div>							
+	
+							<button type="submit" class="btn btn-primary">Foglalás elküldése</button>
+						  </form>
+
 				</div>
 		</section>		
 

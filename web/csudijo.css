@@ -1,42 +1,23 @@
-.main  {
-    background: lightgray;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
 .fejlec {
     height: 100vh;
     min-height: 500px;
-    background-image: url('../kepek/etterem.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-  }
+    font-weight: 200;
+ }
 
-  h1 {
-      font-size: 5em;
-  }
+ h1 {
+      font-size: 6rem;
+      font-weight: 100;
+ }
 
-  h2 {
+ h2 {
       padding-top: 10px;
       padding-bottom: 15px;
-  }
-
-  .lead {
-    font-size: 3em
-  }
-
-.navbar-brand img {
-    height: 50px;
-}
+      font-weight: 100;
+ }
 
 section {
     padding-top: 25px;
     padding-bottom: 25px;
-}
-.rolunk {
 }
 
 .etlap {

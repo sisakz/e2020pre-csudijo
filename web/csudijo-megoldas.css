@@ -1,0 +1,41 @@
+#fejlec {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../kepek/etterem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  h1 {
+      font-size: 5em;
+  }
+
+  h2 {
+      padding-top: 10px;
+      padding-bottom: 15px;
+  }
+
+  .lead {
+    font-size: 3em
+  }
+
+.navbar-brand img {
+    height: 50px;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.rolunk {
+}
+
+.etlap {
+    background-color: rgb(236, 236, 236);
+}
+
+.asztalfoglalas {
+    background-color: rgb(236, 236, 236);
+}

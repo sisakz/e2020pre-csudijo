@@ -18,5 +18,10 @@
         "id": 15,
         "description": "Legnépszerűbb étel",
         "adminPage": true
+    }, 
+    {
+        "id": 16,
+        "description": "Valami",
+        "adminPage": true
     } 
 ]

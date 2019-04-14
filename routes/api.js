@@ -1,10 +1,11 @@
 var express = require('express')
 var router = express.Router()
 var mysql = require('mysql')
+var sqlTasks = require('../assets/sqlTasks.json')
 var db = {
   host: 'localhost',
-  user: 'admin',
-  password: 'Szivarvany21',
+  user: 'root',
+  password: '',
   database: 'csudijo'
 }
 const getSqlTasks = require('../assets/sqlTasks')
@@ -64,7 +65,7 @@ router.get('/forgalom', function (req, res, next) {
 		res.send(JSON.stringify({ error: error.sqlMessage }))
 	  } else {
 		console.log(JSON.stringify(error))
-		res.send(JSON.stringify({ error: 'Ismeretlen eredetű error' }))
+		res.send(JSON.stringify({ error: 'Ismeretlen eredetű hiba' }))
 	  }
 	})
 })
@@ -72,6 +73,10 @@ router.get('/forgalom', function (req, res, next) {
 /* GET legnepszerubb. */
 router.get('/legnepszerubb', function (req, res, next) {
   res.send(JSON.stringify({ etelNev: 'LECSÓ KOLBÁSZCSIPSSZEL' }))
+})
+
+router.get('/sqltasks', function (req, res, next) {
+  res.send(JSON.stringify(sqlTasks))
 })
 
 module.exports = router

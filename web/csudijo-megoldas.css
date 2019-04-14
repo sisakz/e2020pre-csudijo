@@ -1,7 +1,7 @@
 #fejlec {
     height: 100vh;
     min-height: 500px;
-    background-image: url('../kepek/etterem.jpg');
+    background-image: url('kepek/etterem.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

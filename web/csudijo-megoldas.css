@@ -1,3 +1,11 @@
+body {
+    font-weight: 300;
+}
+
+nav {
+    font-weight: 500;
+}
+
 #fejlec {
     height: 100vh;
     min-height: 500px;
@@ -6,20 +14,27 @@
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-  }
+}
 
-  h1 {
-      font-size: 5em;
-  }
+section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-  h2 {
-      padding-top: 10px;
-      padding-bottom: 15px;
-  }
+h1 {
+    font-size: 5em;
+    font-weight: 200;
+}
 
-  .lead {
+h2 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 200
+}
+
+.lead {
     font-size: 3em
-  }
+}
 
 .navbar-brand img {
     height: 50px;
@@ -29,8 +44,8 @@ section {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-.rolunk {
-}
+
+.rolunk {}
 
 .etlap {
     background-color: rgb(236, 236, 236);
@@ -38,4 +53,10 @@ section {
 
 .asztalfoglalas {
     background-color: rgb(236, 236, 236);
+}
+
+.card {
+    margin-bottom: 30px;
+    max-height: 100%;
+    height: 100%;
 }

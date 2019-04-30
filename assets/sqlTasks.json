@@ -16,12 +16,17 @@
     },
     {
         "id": 15,
+        "description": "Új desszert",
+        "adminPage": false
+    },    
+    {
+        "id": 16,
         "description": "A három legnépszerűbb étel februárban",
         "adminPage": true
     }, 
     {
-        "id": 16,
-        "description": "Befizetendő ÁFA",
+        "id": 17,
+        "description": "Nettó árbevétel és befizetendő ÁFA",
         "adminPage": true
     } 
 ]

@@ -6,7 +6,7 @@ var db = {
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'csudijo'
+  database: 'csudijo2'
 }
 const getSqlTasks = require('../assets/sqlTasks')
 
@@ -75,8 +75,17 @@ router.get('/legnepszerubb', function (req, res, next) {
   res.send(JSON.stringify({ etelNev: 'LECSÓ KOLBÁSZCSIPSSZEL' }))
 })
 
+/* GET sqlTasks */
 router.get('/sqltasks', function (req, res, next) {
   res.send(JSON.stringify(sqlTasks))
+})
+
+/* POST foglalas */
+router.post('/foglalas', function(req, res, next) {
+	
+	console.log(req.body)
+	//res.send(JSON.stringify({status: "OK"}))
+	res.redirect("/")
 })
 
 module.exports = router

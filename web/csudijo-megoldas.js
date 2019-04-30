@@ -11,9 +11,15 @@ const legnepszerubb = function() {
   xmlhttp.send();
 }
 
+const foglalas = function() {
+  const foglalasForm = document.getElementById("foglalasForm");
+  console.log(JSON.stringify(foglalasForm.serializeArray()))
+}
 
 window.onload = function() {
   legnepszerubb();
 };
+
+
 
 // const teljesForgalom = function() {...}

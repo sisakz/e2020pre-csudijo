@@ -1,5 +1,4 @@
-[
-    {
+[{
         "id": 12,
         "description": "Adatbázis létrehozása",
         "adminPage": false
@@ -18,15 +17,21 @@
         "id": 15,
         "description": "Új desszert",
         "adminPage": false
-    },    
+    },
     {
         "id": 16,
         "description": "A három legnépszerűbb étel februárban",
         "adminPage": true
-    }, 
+    },
     {
         "id": 17,
         "description": "Nettó árbevétel és befizetendő ÁFA",
         "adminPage": true
-    } 
+    },
+    {
+        "id": 99,
+        "description": "Vendégkönyv bejegyzések",
+        "adminPage": true,
+        "sql": "SELECT bejegyzes, createdAt AS datum FROM vendegkonyv;"
+    }
 ]

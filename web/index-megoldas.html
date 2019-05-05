@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- Szükséges meta elemek -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Navigáció -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +26,13 @@
                         <a class="nav-link" href="#rolunk">Rólunk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Étlap</a>
+                        <a class="nav-link" href="#etlap">Étlap</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Legnépszerűbb</a>
+                        <a class="nav-link" href="#legnepszerubb">Legnépszerűbb</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Asztalfoglalás</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Belépés</a>
+                        <a class="nav-link" href="#vendegkonyv">Vendégkönyv</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kapcsolat</a>
@@ -70,13 +67,13 @@
             </p>
 
 
-            <img src="kepek/csicseri.jpg" alt="Csicseri patak" class="mw-100">
+            <img src="kepek/csicseri.jpg" alt="Csicseri patak">
 
 
         </section>
 
         <!-- Étlap -->
-        <section class="etlap">
+        <section id="etlap" class="szurke-hatter">
             <h2>Ízelítő étlapunkról</h2>
             <!-- Étel kártyák -->
             <div class="row">
@@ -148,32 +145,19 @@
             <p id="legnepszerubb">
 
             </p>
-            </p>
         </section>
-        <!-- Asztalfoglalás -->
-        <section class="asztalfoglalas">
-            <h2>Asztalfoglalás</h2>
-            <form action="/foglalas">
-                <div class="form-group">
-                    <label for="nev">Név:</label>
-                    <input type="text" class="form-control" id="nev">
-                </div>
-                <div class="form-group">
-                    <label for="telefon">Telefon:</label>
-                    <input type="text" class="form-control" id="telefon">
-                </div>
-                <div class="form-group">
-                    <label for="idopont">Időpont:</label>
-                    <input type="text" class="form-control" id="idopont">
-                </div>
-                <div class="form-group">
-                    <label for="vendegszam">Vendégek száma:</label>
-                    <input type="number" class="form-control" id="vendegszam">
-                </div>
 
-                <button type="submit" class="btn btn-primary">Foglalás elküldése</button>
+        <!-- Vendégkönyv -->
+        <section id="vendegkonyv" class="szurke-hatter">
+            <h2>Vendégkönyv</h2>
+            <p>Ossza meg másokkal, hogy mi tetszett nálunk, és mondja el nekünk, hogy mivel tehetnék még kellemesebbé itt létét legközelebb!</p>
+            <form>
+                <div class="form-group">
+                    <label for="bejegyzes">Bejegyzés:</label>
+                    <textarea class="form-control" id="bejegyzes" rows="10"></textarea>
+                </div>
+                <button type="button" class="btn btn-secondary" onclick="vendegkonyv()">Bejegyzés elküldése</button>
             </form>
-
         </section>
     </div>
 
@@ -186,7 +170,7 @@
 					9999 Karakumszörcsög <br />
 					Macskakapocs utca 29. <br />
 					Telefon: +36 55 555-5555 <br />
-					Email: kapcsolat@csudijo-etterem.hu
+					Email: <a href="mailto:kapcsolat@csudijo-etterem.hu">kapcsolat@csudijo-etterem.hu</a>
 
 				</small>
 
@@ -194,8 +178,8 @@
     </footer>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Opcionális JavaScript -->
+    <!-- jQuery először, utána a Popper.js, végül Bootstrap JS -->
     <script src="assets/jquery/jquery-3.3.1.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

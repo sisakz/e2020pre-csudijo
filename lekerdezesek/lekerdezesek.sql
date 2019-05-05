@@ -22,4 +22,4 @@ WHERE etel=1 GROUP BY termekek.nev ORDER BY mennyiseg DESC LIMIT 3;
 17. feladat
 SELECT ROUND(SUM(termekek.ar/(1+afakulcs)),0) AS netto, ROUND(SUM(termekek.ar*(1-1/(1+afakulcs))),0) AS afa 
 FROM rendelesek
-INNER JOIN termekek ON termekek.id = rendelesek.termekId;
+INNER JOIN termekek ON termekek.id = rendelesek.termekId; 
